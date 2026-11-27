@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Laptops Catalog - Freelancer Laptop Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div><i class="fa-solid fa-truck"></i> Fast Laptop Delivery &amp; Bulk Stock Inquiries</div>
+        <div>WhatsApp Direct: <a href="https://wa.me/923154034549" target="_blank" rel="noopener noreferrer">+92 315 4034549</a></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-laptop"></i></div>
+            Freelancer <span>Laptop Zone</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Shop Laptops</a></li>
+            <li><a href="guides.html">Laptop Guides</a></li>
+            <li><a href="wholesale.html">Wholesale Bulk</a></li>
+            <li><a href="about.html">About &amp; Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="https://wa.me/923154034549" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat Now</a>
+            <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <h1>Available <span>Laptop</span> Catalog</h1>
+        <p>Filter HP, Dell, Lenovo, and Toshiba stock by RAM (8GB/16GB) and color (Silver/Black). Click "Inquire Price" for instant WhatsApp details.</p>
+    </div>
+
+    <div class="shop-container">
+        <div class="filter-box">
+            <h3><i class="fa-solid fa-filter"></i> Filter Stock</h3>
+            <br>
+            <div class="filter-group">
+                <label for="search-input">Search Keyword</label>
+                <input type="text" id="search-input" placeholder="e.g. EliteBook, Latitude, i7" oninput="applyFilters()">
+            </div>
+            <div class="filter-group">
+                <label for="filter-brand">Brand</label>
+                <select id="filter-brand" onchange="applyFilters()">
+                    <option value="all">All Brands</option>
+                    <option value="HP">HP</option>
+                    <option value="Dell">Dell</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Toshiba">Toshiba</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-ram">RAM Capacity</label>
+                <select id="filter-ram" onchange="applyFilters()">
+                    <option value="all">All RAM Sizes</option>
+                    <option value="8GB">8GB RAM</option>
+                    <option value="16GB">16GB RAM</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-color">Color</label>
+                <select id="filter-color" onchange="applyFilters()">
+                    <option value="all">All Colors</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Black">Black</option>
+                </select>
+            </div>
+            <button class="btn btn-outline" style="width: 100%; justify-content: center;" onclick="resetFilters()">Reset Filters</button>
+        </div>
+
+        <div class="products-grid" id="shop-products-grid"></div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Freelancer Laptop Zone</h4>
+                <p style="font-size: 0.88rem; color: #BDC3C7;">Laptops and buying guides for freelancers, students, offices, and bulk buyers.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guides.html">Laptop Guides</a></li>
+                    <li><a href="wholesale.html">Wholesale Bulk</a></li>
+                    <li><a href="about.html">About &amp; Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Available Specs</h4>
+                <ul>
+                    <li>HP, Dell, Lenovo, Toshiba</li>
+                    <li>Intel Core i7 up to 11th Gen</li>
+                    <li>8GB/256GB &amp; 16GB/256GB SSD</li>
+                    <li>Colors: Silver &amp; Black</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact WhatsApp</h4>
+                <ul>
+                    <li><i class="fa-brands fa-whatsapp"></i> +92 315 4034549</li>
+                    <li><a href="contact.html">Contact &amp; FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Freelancer Laptop Zone. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

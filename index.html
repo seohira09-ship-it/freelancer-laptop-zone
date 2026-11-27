@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Laptop Zone - Quality Laptops &amp; Buying Guides</title>
+    <meta name="description" content="Freelancer Laptop Zone offers verified HP, Dell, Lenovo, and Toshiba laptops with Intel Core i7 up to 11th Gen, 8GB/256GB and 16GB/256GB SSD in Silver and Black.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div><i class="fa-solid fa-truck"></i> Fast Laptop Delivery &amp; Bulk Stock Inquiries</div>
+        <div>WhatsApp Direct: <a href="https://wa.me/923154034549" target="_blank" rel="noopener noreferrer">+92 315 4034549</a></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-laptop"></i></div>
+            Freelancer <span>Laptop Zone</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop Laptops</a></li>
+            <li><a href="guides.html">Laptop Guides</a></li>
+            <li><a href="wholesale.html">Wholesale Bulk</a></li>
+            <li><a href="about.html">About &amp; Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="https://wa.me/923154034549" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat Now</a>
+            <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <span class="hero-badge"><i class="fa-solid fa-circle-check"></i> Genuine Stock Available</span>
+            <h1>Find the Right <span>Laptop</span> for Work, Study &amp; Business</h1>
+            <p>Verified HP, Dell, Lenovo, and Toshiba laptops equipped with Intel Core i7 up to 11th Gen processors and fast SSD storage. Explore our catalog or read our buying guides.</p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary"><i class="fa-solid fa-store"></i> Browse Laptop Catalog</a>
+                <a href="guides.html" class="btn btn-outline"><i class="fa-solid fa-book-open"></i> Read Buying Guides</a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&amp;fit=crop&w=800&q=80" alt="Freelancer Laptops Showcase" class="hero-img">
+        </div>
+    </section>
+
+    <div class="stock-highlight-banner">
+        <div class="spec-tag"><i class="fa-solid fa-laptop"></i> HP, Dell, Lenovo, Toshiba</div>
+        <div class="spec-tag"><i class="fa-solid fa-microchip"></i> Intel Core i7 up to 11th Gen</div>
+        <div class="spec-tag"><i class="fa-solid fa-memory"></i> 8GB / 256GB SSD &amp; 16GB / 256GB SSD</div>
+        <div class="spec-tag"><i class="fa-solid fa-palette"></i> Silver &amp; Black Colors</div>
+    </div>
+
+    <div class="section-title">
+        <h2>Explore By Brand</h2>
+        <p>Click any brand to open its dedicated filtered catalog page</p>
+    </div>
+    <div class="category-grid">
+        <a href="shop.html?brand=HP" class="category-card">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>HP Laptops</h3>
+            <p>EliteBook &amp; ProBook business models</p>
+        </a>
+        <a href="shop.html?brand=Lenovo" class="category-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Lenovo Laptops</h3>
+            <p>ThinkPad series for students &amp; coders</p>
+        </a>
+        <a href="shop.html?brand=Dell" class="category-card">
+            <i class="fa-solid fa-microchip"></i>
+            <h3>Dell Laptops</h3>
+            <p>Latitude machines (Core i7 up to 11th Gen)</p>
+        </a>
+        <a href="shop.html?brand=Toshiba" class="category-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Toshiba Laptops</h3>
+            <p>Lightweight Dynabook portability</p>
+        </a>
+    </div>
+
+    <div class="section-title">
+        <h2>Featured Stock Highlights</h2>
+        <p>Click "Inquire Price" for WhatsApp quote or "Buying Guide" to learn which specs suit your work</p>
+    </div>
+    <div class="products-grid" id="home-featured-grid" style="padding: 0 5%;"></div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Freelancer Laptop Zone</h4>
+                <p style="font-size: 0.88rem; color: #BDC3C7;">Laptops and buying guides for freelancers, students, offices, and bulk buyers.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Pages</h4>
+                <ul>
+                    <li><a href="shop.html">Shop Laptops</a></li>
+                    <li><a href="guides.html">Laptop Buying Guides</a></li>
+                    <li><a href="wholesale.html">Wholesale Bulk</a></li>
+                    <li><a href="about.html">About Us &amp; Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Available Specs</h4>
+                <ul>
+                    <li>HP, Dell, Lenovo, Toshiba</li>
+                    <li>Intel Core i7 up to 11th Gen</li>
+                    <li>8GB/256GB &amp; 16GB/256GB SSD</li>
+                    <li>Colors: Silver &amp; Black</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact WhatsApp</h4>
+                <ul>
+                    <li><i class="fa-brands fa-whatsapp"></i> +92 315 4034549</li>
+                    <li><a href="contact.html">View Contact &amp; FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Freelancer Laptop Zone. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
